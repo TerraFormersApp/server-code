@@ -9,7 +9,9 @@
     "express": "^4.16.2",
     "knex": "^0.14.4"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^1.17.1"
+  },
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
