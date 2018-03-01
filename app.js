@@ -1,6 +1,5 @@
 const express = require("express");
 const cors = require("cors");
-
 const app = express();
 const bodyParser = require("body-parser");
 app.use(bodyParser.json());
@@ -16,7 +15,7 @@ app.use(function(request, response, next) {
   err.status = 404;
   next(err);
 });
-  
+
 // error handler
 app.use(function(err, request, response, next) {
   response.status(err.status || 500);
