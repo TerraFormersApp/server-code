@@ -5,16 +5,8 @@ exports.seed = function(knex, Promise) {
 				{
 					id: 1,
 					name: "Vulcan",
-					water_percent: 34,
-					water_color: "#EEE685",
-					sky_color: "#CAE1FF",
-					mountains: false,
-					trees: false,
-					land_percent: 66,
-					land_color: "#FF6103",
-					hurricane: true,
-					wind: false,
-					thumbnail_image: "somelink.com"
+					planet_description: "The home of Spock - Live Long and Prosper",
+					planet_image: "somelink.com for an image of our planet"
 				}
       ]);
     })
