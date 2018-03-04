@@ -14,6 +14,6 @@ module.exports = {
 		return database("planets").delete().where("id", id);
 	},
 	updatePlanet(id, planet){
-	return database("planets").update(planet).where("id", id).returning("*").then(record => record[0]);
+		return database("planets").update(planet).where("id", id).returning("*").then(record => record[0]);
 },
 };

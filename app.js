@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 const bodyParser = require("body-parser");
-const queries = require("./queries")
+const queries = require("./queries");
 app.use(bodyParser.json());
 app.use(cors());
 
@@ -37,7 +37,7 @@ app.delete("/planets/:id", (request, response, next) => {
 });
 
 app.put("/planets/:id", (request, response, next) => {
-    queries.updateEvent(request.params.id, request.body).then(() => {
+    queries.updatePlanet(request.params.id, request.body).then(() => {
 			response.status(201).json("Your planet was updated!");
     }).catch(next);
 });
