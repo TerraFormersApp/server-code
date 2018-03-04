@@ -24,8 +24,8 @@ app.get("/planets/:id", (request, response, next) => {
   }).catch(next);
 });
 
-app.post("/planets", (request, response, next) => {
-  queries.createPlanet(request.body).then(() => {
+app.post("/planets", (req, response, next) => {
+  queries.createPlanet(req.body).then(() => {
     response.status(201).json("Your planet was added!");
   }).catch(next);
 });

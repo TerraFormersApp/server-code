@@ -10,3 +10,5 @@ exports.up = function(knex, Promise) {
 exports.down = function(knex, Promise) {
     return knex.schema.dropTableIfExists("planets");
 };
+
+//comment for git recognition

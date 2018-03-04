@@ -7,6 +7,12 @@ exports.seed = function(knex, Promise) {
 					name: "Vulcan",
 					planet_description: "The home of Spock - Live Long and Prosper",
 					planet_image: "somelink.com for an image of our planet"
+				},
+				{
+					id: 2,
+					name: "Romulus",
+					planet_description: "The home of enemies of Spock - Don't Live Long and Prosper",
+					planet_image: "somelink.com for an image of our planet"
 				}
       ]);
     })
