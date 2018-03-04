@@ -37,11 +37,8 @@ app.delete("/planets/:id", (request, response, next) => {
 });
 
 app.put("/planets/:id", (request, response, next) => {
-
-  queries.updatePlanet(request.params.id,request.body)
-    .then(() => console.log(request.body))
-    .then(() => {
-      response.status(201).json("Your planet was updated!");
+    queries.updatePlanet(request.params.id, request.body).then(() => {
+			response.status(201).json("Your planet was updated!");
     }).catch(next);
 });
 

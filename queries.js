@@ -13,7 +13,7 @@ module.exports = {
   deletePlanet(id){
     return database("planets").delete().where("id", id);
   },
-  updatePlanet(id, newName){
-    return database("planets").where("id", id).update(newName).returning("*").then(record => record[0]);
-  },
+	updatePlanet(id, planet){
+		return database("planets").update(planet).where("id", id).returning("*").then(record => record[0]);
+}
 };
